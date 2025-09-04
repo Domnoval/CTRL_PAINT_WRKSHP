@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sacred quantum theme customizations */
+
+:root {
+  /* Mystical color harmonies */
+  --quantum-primary: #6366f1;
+  --quantum-secondary: #7c3aed;
+  --quantum-accent: #06b6d4;
+  --sacred-black: #0f0f23;
+  --mystic-white: #f8fafc;
+
+  /* Dimensional depths */
+  --ethereal-shadow: 0 25px 50px -12px rgba(255, 255, 255, 0.15);
+  --quantum-glow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Quantum waveform animations */
+@keyframes quantum-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scaleX(1.5);
+  }
+}
+
+@keyframes quantum-collapse {
+  0% {
+    clip-path: circle(25%);
+    transform: rotate(0deg);
+  }
+  50% {
+    clip-path: circle(250%);
+    transform: rotate(180deg);
+  }
+  100% {
+    clip-path: circle(0%);
+    transform: rotate(360deg);
+  }
+}
+
+/* Mystical component classes */
+.quantum-portal {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: var(--ethereal-shadow);
+}
+
+.dimensional-zone:hover {
+  animation: quantum-collapse 0.6s ease-in-out;
+  box-shadow: var(--quantum-glow);
+}
+
+/* Art gallery responsive adjustments */
+@media (max-width: 1024px) {
+  .quantum-portal {
+    backdrop-filter: blur(10px);
+  }
+}
+
+/* Accessibility enhancements for mystical experience */
+@media (prefers-reduced-motion: reduce) {
+  .dimensional-zone:hover {
+    animation: none;
+  }
+}
